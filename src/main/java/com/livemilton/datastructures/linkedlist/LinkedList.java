@@ -33,6 +33,7 @@ public class LinkedList {
         Node temp = head;
         while(temp != null){
             System.out.println(temp.value);
+            //move across the linked list
             temp= temp.next;
         }
     }
@@ -56,5 +57,19 @@ public class LinkedList {
         System.out.println("Length: "+length);
     }
 
+
+    //append
+    public void append(int value){
+        Node newNode= new Node(value);
+        if(length==0){
+            head=newNode;
+            tail=newNode;
+        }else{
+            tail.next=newNode;
+            tail=newNode;
+        }
+        length++;
+
+    }
 
 }
