@@ -13,10 +13,22 @@ public class Main {
         myLinkedList.printList();*/
 
         //append
+        /*LinkedList myLinkedListAppend = new LinkedList(1);
+
+        myLinkedListAppend.append(2);
+        myLinkedListAppend.printList(); */
+
+        //removeLast
         LinkedList myLinkedListAppend = new LinkedList(1);
 
         myLinkedListAppend.append(2);
-        myLinkedListAppend.printList();
+        //(2)Items - Returns 2 Node
+        System.out.println(myLinkedListAppend.removeLast().value);
+        //(1) Item - Returns 1 Node
+        System.out.println(myLinkedListAppend.removeLast().value);
+        //(0) Item -Returns null
+        System.out.println(myLinkedListAppend.removeLast());
+
 
     }
 }
